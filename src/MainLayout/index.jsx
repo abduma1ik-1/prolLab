@@ -8,9 +8,11 @@ import profile_none_icon from "../assets/svg/profile/profile_none_icon.svg";
 import { SidebarItem } from "../components/SidebarItem";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { ProfileContext } from "../App";
+import { LogIn } from "../LogIn";
 
 export const MainLayout = ({preview, name, navphone}) => {
   const {profile} =  useContext(ProfileContext)
+  const token = localStorage.getItem("token");
 
   const navigate = useNavigate()
 
@@ -19,9 +21,12 @@ export const MainLayout = ({preview, name, navphone}) => {
     localStorage.removeItem('token')
     localStorage.removeItem('id')
     localStorage.removeItem('point')
-    navigate('/login')
+    navigate('/')
   }
   console.log();
+  if(!token) {
+    return <LogIn/>;
+  }
 
   return (
     <div className="mainlayout">
