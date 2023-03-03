@@ -1,0 +1,157 @@
+body{
+  background-color: #fcfcfc;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &_change_btn {
+    display: flex;
+    justify-content: end;
+
+    button {
+      padding: 12px 12px;
+      cursor: pointer;
+      border: none;
+      color: #6bc1db;
+      margin-top: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #6bc1db;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #6bc1db;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &_content{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  &_item_blocks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &_item_twice{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .register_item_input input {
+    height: 22px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #6bc1db;
+  }
+
+  input {
+    border-radius: 5px;
+    outline-color: #6bc1db;
+    border: 1px solid #6bc1db;
+  }
+
+  &_inner {
+    width: 60%;
+    padding: 15px 50px;
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 76px;
+    color: #144339;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-between;
+
+    &_title{
+      color: #144339;
+    }
+  }
+
+  &_form_input {
+    width: 98%;
+    height: 30px;
+    margin-top: 7px;
+    padding-left: 5px;
+    color: #144339;
+    
+  }
+
+  &_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &_form_block {
+    display: flex;
+    width: 105%;
+  }
+
+  &_form_img {
+    position: relative;
+    top: 3px;
+    left: -35px;
+    cursor: pointer;
+  }
+
+  &_forgot{
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    font-family: 'Poppins', sans-serif;
+    color: #144339;
+    text-decoration: none;
+
+    &:hover{
+      color: #6bc1db;
+    }
+  }
+
+  &_btn {
+    margin-top: 40px;
+    button {
+      cursor: pointer;
+      width: 100%;
+      height: 39px;
+      border: none;
+      background: #6bc1db;
+      border-radius: 10px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+}

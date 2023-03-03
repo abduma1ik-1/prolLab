@@ -1,0 +1,36 @@
+{
+    "name": "PWA",
+    "short_name": "PWA",
+    "theme_color": "#1976d2",
+    "background_color": "#fafafa",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "./src/assets/svg/sidebar/sidebar_history_icon.svg",
+            "sizes": "17.54x16.44",
+            "type": "image/svg"
+        },
+        {
+            "src": "./src/assets/svg/sidebar/sidebar_home_icon.svg",
+            "sizes": "17.54x16.44",
+            "type": "image/svg"
+        },
+        {
+            "src": "./src/assets/svg/sidebar/sidebar_profile_icon.svg",
+            "sizes": "17.54x16.44",
+            "type": "image/svg"
+        },
+        {
+            "src": "",
+            "sizes": "",
+            "type": ""
+        },
+        {
+            "src": "",
+            "sizes": "",
+            "type": ""
+        }
+    ]
+}
