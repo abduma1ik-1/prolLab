@@ -88,9 +88,7 @@ export const LogIn = () => {
                 </div>
                 <span className="error_text">{error?.password ? error?.password : ''}</span>
               </div>
-              <Link to="/add-new-workmates" className="register_forgot">
-                Создать новую учетную запись?
-              </Link>
+             
             </div>
           </form>
         </div>

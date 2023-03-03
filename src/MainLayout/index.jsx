@@ -34,6 +34,8 @@ export const MainLayout = ({preview, name, navphone}) => {
             <SidebarItem to={'/'} image={sidebar_home_icon} title='Главная'/>
             {profile?.role === 'is_staff' ? null : <SidebarItem to={'workmates'} image={sidebar_history_icon} title='Сотрудники'/>}
             <SidebarItem to={'profile'} image={sidebar_profile_icon} title='Профиль'/>
+            {profile?.role === 'is_staff' ? null : <SidebarItem to={'/add-new-workmates'} image={sidebar_profile_icon} title='Создать новую учетную запись?'/>}
+            
           </div>
             <div className="mainlayout_sidebar_btn">
                 <button onClick={logout}>Выйти из аккаунта</button>
